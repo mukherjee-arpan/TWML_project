@@ -102,7 +102,7 @@ for avg_iter = 1:avg
         % Adversary flipping coin and contaminating reward
         D = binornd(1,eps);
         if D == 1
-            x = 0.3+rand();
+            x = 0.05+0.1*rand();
         else
             x = normrnd(mu(idx_arm),sigma);
         end
